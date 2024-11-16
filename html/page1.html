@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First page</title>
+</head>
+<body>
+<h1>Страница 1</h1>
+
+<form>
+    <label for="firstName">Имя:</label><br>
+    <input type="text" id="firstName" name="firstName"><br>
+
+    <label for="lastName">Фамилия</label><br>
+    <input type="text" id="lastName" name="lastName"><br><br>
+
+    <label for="message">Сообщение:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+    <input type="checkbox" id="agree" name="agree" value="yes">
+    <label for="agree">Согласен с правилами</label><br><br>
+
+    <label>Пол:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Мужской</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Женский</label><br><br>
+
+    <label for="countries">Страна:</label>
+    <select id="countries" name="countries">
+        <option value="russia">Россия</option>
+        <option value="usa">США</option>
+        <option value="germany">Германия</option>
+        <option value="turkey">Турция</option>
+    </select><br><br>
+
+    <label for="hobbies">Хобби:</label><br>
+    <select id="hobbies" name="hobbies" multiple>
+        <option value="reading">Чтение</option>
+        <option value="sports">Спорт</option>
+        <option value="music">Музыка</option>
+        <option value="travel">Путешествия</option>
+    </select><br><br>
+
+    <button type="submit">Отправить</button>
+</form>
+<br>
+<p>Перейти на <a href="page2.html"> страницу 2</a></p>
+</body>
+</html>
