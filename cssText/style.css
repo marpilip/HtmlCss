@@ -1,0 +1,32 @@
+* {
+    background-color: #feeed5;
+    margin-left: 1%;
+}
+
+h1 {
+    color: #786d5b;
+    font-size: 30px;
+    font-family: "Arial Nova Regular", sans-serif;
+    margin: 1%;
+}
+
+h2 {
+    color: #786d5b;
+    font-size: 18px;
+    font-family: "Arial", serif;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.paragraph {
+    color: #538697;
+    font-weight: 550;
+    line-height: 30px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-indent: 1.5em;
+}
