@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>First page</title>
@@ -8,43 +8,73 @@
 <h1>Страница 1</h1>
 
 <form>
-    <label for="firstName">Имя:</label><br>
-    <input type="text" id="firstName" name="firstName"><br>
+    <label>Имя:
+        <input type="text" id="first_name" name="first_name">
+    </label>
+    <br>
+    <br>
 
-    <label for="lastName">Фамилия</label><br>
-    <input type="text" id="lastName" name="lastName"><br><br>
+    <label for="last_name">Фамилия:
+        <input type="text" id="last_name" name="last_name">
+    </label>
+    <br>
+    <br>
 
-    <label for="message">Сообщение:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    <label for="message">Сообщение:
+        <br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    </label>
+    <br>
+    <br>
 
-    <input type="checkbox" id="agree" name="agree" value="yes">
-    <label for="agree">Согласен с правилами</label><br><br>
+    <label>
+        Согласен с правилами
+        <input type="checkbox" id="agree" name="agree" value="yes">
+    </label>
+    <br>
+    <br>
 
-    <label>Пол:</label><br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Мужской</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Женский</label><br><br>
+    <label>Пол:
+        <br>
+        <label for="male">Мужской
+            <input type="radio" id="male" name="gender" value="male">
+        </label>
+        <br>
+        <label for="female">Женский
+            <input type="radio" id="female" name="gender" value="female">
+        </label>
+    </label>
+    <br>
+    <br>
 
-    <label for="countries">Страна:</label>
-    <select id="countries" name="countries">
-        <option value="russia">Россия</option>
-        <option value="usa">США</option>
-        <option value="germany">Германия</option>
-        <option value="turkey">Турция</option>
-    </select><br><br>
+    <label for="countries">Страна:
+        <select id="countries" name="countries">
+            <option value="russia">Россия</option>
+            <option value="usa">США</option>
+            <option value="germany">Германия</option>
+            <option value="turkey">Турция</option>
+        </select>
+    </label>
+    <br>
+    <br>
 
-    <label for="hobbies">Хобби:</label><br>
-    <select id="hobbies" name="hobbies" multiple>
-        <option value="reading">Чтение</option>
-        <option value="sports">Спорт</option>
-        <option value="music">Музыка</option>
-        <option value="travel">Путешествия</option>
-    </select><br><br>
+    <label for="hobbies">Хобби:
+        <br>
+        <select id="hobbies" name="hobbies" multiple>
+            <option value="reading">Чтение</option>
+            <option value="sports">Спорт</option>
+            <option value="music">Музыка</option>
+            <option value="travel">Путешествия</option>
+        </select>
+    </label>
+    <br>
+    <br>
 
     <button type="submit">Отправить</button>
 </form>
 <br>
-<p>Перейти на <a href="page2.html"> страницу 2</a></p>
+<p>
+    Перейти на <a href="page2.html"> страницу 2</a>
+</p>
 </body>
 </html>
