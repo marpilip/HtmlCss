@@ -1,32 +1,36 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     background-color: #feeed5;
-    margin-left: 1%;
+    line-height: 1.4;
+    margin: 10px 20px;
 }
 
 h1 {
     color: #786d5b;
-    font-size: 30px;
-    font-family: "Arial Nova Regular", sans-serif;
-    margin: 1%;
+    font-size: 55px;
+    line-height: 1.2;
 }
 
-h2 {
+.info {
     color: #786d5b;
-    font-size: 18px;
-    font-family: "Arial", serif;
+    font-family: Arial, serif;
+    margin-bottom: 10px;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+[description] {
+    text-indent: 50px;
+}
+
+.heading {
+    color: #538697;
+    font-weight: bold;
+    box-sizing: border-box;
 }
 
 .line-through {
+    color: #786d5b;
     text-decoration: line-through;
-}
-
-.paragraph {
-    color: #538697;
-    font-weight: 550;
-    line-height: 30px;
-}
-
-p {
-    margin-bottom: 10px;
-    text-indent: 1.5em;
+    box-sizing: border-box;
 }
