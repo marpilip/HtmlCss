@@ -8,22 +8,19 @@
 <h1>Страница 1</h1>
 
 <form>
-    <label>
-        Имя:
+    <label>Имя:
         <input type="text" id="first_name" name="first_name">
     </label>
     <br>
     <br>
 
-    <label>
-        Фамилия:
+    <label for="last_name">Фамилия:
         <input type="text" id="last_name" name="last_name">
     </label>
     <br>
     <br>
 
-    <label>
-        Сообщение:
+    <label for="message">Сообщение:
         <br>
         <textarea id="message" name="message" rows="4" cols="50"></textarea>
     </label>
@@ -31,30 +28,26 @@
     <br>
 
     <label>
-        <input type="checkbox" id="agree" name="agree" value="yes">
         Согласен с правилами
+        <input type="checkbox" id="agree" name="agree" value="yes">
     </label>
     <br>
     <br>
 
-    <label>
-        Пол:
+    <label>Пол:
         <br>
-        <label for="male">
+        <label for="male">Мужской
             <input type="radio" id="male" name="gender" value="male">
-            Мужской
         </label>
         <br>
-        <label for="female">
+        <label for="female">Женский
             <input type="radio" id="female" name="gender" value="female">
-            Женский
         </label>
     </label>
     <br>
     <br>
 
-    <label>
-        Страна:
+    <label for="countries">Страна:
         <select id="countries" name="countries">
             <option value="russia">Россия</option>
             <option value="usa">США</option>
@@ -65,8 +58,7 @@
     <br>
     <br>
 
-    <label>
-        Хобби:
+    <label for="hobbies">Хобби:
         <br>
         <select id="hobbies" name="hobbies" multiple>
             <option value="reading">Чтение</option>
