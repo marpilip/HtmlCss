@@ -7,7 +7,6 @@ body {
 .title {
     color: #786d5b;
     padding: 20px 20px 5px;
-    box-sizing: border-box;
     font-size: 40px;
     background-color: #fff;
     margin-bottom: 20px;
@@ -18,7 +17,6 @@ body {
     margin-left: 20px;
     font-size: 20px;
     font-weight: 550;
-    box-sizing: border-box;
 }
 
 .input_field textarea,
@@ -30,7 +28,6 @@ body {
     display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
     font-size: 18px;
     background-color: #fff;
     width: 97%;
@@ -50,7 +47,6 @@ textarea::placeholder{
 .paragraph-style {
     margin-left: 20px;
     font-size: 20px;
-    box-sizing: border-box;
     color: #847f7c;
 }
 
@@ -64,7 +60,6 @@ textarea::placeholder{
     float: right;
     margin-right: 30px;
     font-weight: 550;
-    box-sizing: border-box;
     margin-top: 20px;
 }
 
