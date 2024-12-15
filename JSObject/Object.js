@@ -1,4 +1,6 @@
-const CountryNamespace = function() {
+"use strict";
+
+const Country = function () {
     const countries = [
         {
             name: 'USA',
@@ -34,25 +36,36 @@ const CountryNamespace = function() {
                 {name: 'Moscow', population: 12500000},
                 {name: 'Saint-Petersburg', population: 5000000}
             ]
-        },
+        }
     ];
 
-    const findCountriesWithMaxCitiesNumber = (countries) => {
-        return countries.filter(country => country.cities.length === Math.max(...countries
-            .map(country => country.cities.length)));
-    };
+    function getCountriesWithMaxCitiesCount(countries) {
+        let maxCitiesCount = 0;
 
-    const calculatePopulationByCountries = (countries) => {
-        return countries.reduce((populationByCountry, country) => {
-            populationByCountry[country.name] =
-                country.cities.reduce((countryNumbers, city) => countryNumbers + city.population, 0);
-            return populationByCountry;
-        }, {});
-    };
+        for (const country of countries) {
+            if (country.cities.length > maxCitiesCount) {
+                maxCitiesCount = country.cities.length;
+            }
+        }
+
+        return countries
+            .filter(country => country.cities.length === maxCitiesCount);
+    }
+
+    function getPopulationsByCountries(countries) {
+        const populationsByCountry = {};
+
+        countries.forEach(country => {
+            populationsByCountry[country.name] = country.cities
+                .reduce((total, city) => total + city.population, 0);
+        });
+
+        return populationsByCountry;
+    }
 
     const main = () => {
-        console.log('Страны с максимальным количеством городов:', findCountriesWithMaxCitiesNumber(countries));
-        console.log('Суммарная численность населения по странам:', calculatePopulationByCountries(countries));
+        console.log('Страны с максимальным количеством городов:', getCountriesWithMaxCitiesCount(countries));
+        console.log('Суммарная численность населения по странам:', getPopulationsByCountries(countries));
     };
 
     return {
@@ -60,4 +73,4 @@ const CountryNamespace = function() {
     };
 }();
 
-CountryNamespace.main();
+Country.main();
