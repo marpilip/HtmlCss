@@ -40,36 +40,32 @@ const Country = function () {
     ];
 
     function getCountriesWithMaxCitiesCount(countries) {
-        let maxCitiesCount = 0;
+        const maxCitiesCount = countries.reduce((max, country) => {
+            return Math.max(max, country.cities.length);
+        }, 0);
 
-        for (const country of countries) {
-            if (country.cities.length > maxCitiesCount) {
-                maxCitiesCount = country.cities.length;
-            }
-        }
-
-        return countries
-            .filter(country => country.cities.length === maxCitiesCount);
+        return countries.filter(country => country.cities.length === maxCitiesCount);
     }
 
     function getPopulationsByCountries(countries) {
-        const populationsByCountry = {};
+        const populationsByCountries = {};
 
         countries.forEach(country => {
-            populationsByCountry[country.name] = country.cities
-                .reduce((total, city) => total + city.population, 0);
+            populationsByCountries[country.name] =
+                country.cities.reduce((totalPopulationByCountry, city) =>
+                    totalPopulationByCountry + city.population, 0);
         });
 
-        return populationsByCountry;
+        return populationsByCountries;
     }
 
-    const main = () => {
+    function main() {
         console.log('Страны с максимальным количеством городов:', getCountriesWithMaxCitiesCount(countries));
         console.log('Суммарная численность населения по странам:', getPopulationsByCountries(countries));
-    };
+    }
 
     return {
-        main,
+        main
     };
 }();
 
