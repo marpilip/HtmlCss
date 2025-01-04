@@ -3,35 +3,35 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     background-color: #feeed5;
     line-height: 1.2;
     color: #786d5b;
+    max-width: 750px;
 }
 
 .main-heading {
-    font-size: 28px;
+    font-size: 30px;
     margin: 5px 15px 10px;
 }
 
 .info {
     font-size: 17px;
     margin-left: 15px;
-    margin-right: 15px;
+    font-family: Helvetica Neue, sans-serif;
 }
 
 .description {
     font-size: 15px;
     text-indent: 20px;
     text-align: justify;
-    margin-right: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 10px;
 }
 
 .heading {
     color: #378eb2;
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: bold;
 }
 
