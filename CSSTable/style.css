@@ -8,7 +8,7 @@ body {
 
 .table {
     border-collapse: collapse;
-    max-width: 1200px;
+    max-width: 850px;
     width: 100%;
     font-size: 20px;
 }
@@ -22,13 +22,14 @@ body {
 }
 
 .table th, .table td {
-    border: 1px solid #eeeeec;
-    padding: 15px;
+    border: 1px solid lightgrey;
+    padding: 15px 10px;
     text-align: left;
 }
 
 .table th {
     background-color: #3597d9;
     color: #fff;
+    text-align: left;
 }
 
