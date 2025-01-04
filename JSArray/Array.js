@@ -29,14 +29,14 @@ const App = (function () {
             .map(evenNumber => evenNumber * evenNumber);
     }
 
-    const main = () => {
+    function main() {
         console.log("Исходный массив", createArray(10));
         console.log("Отсортированный массив в порядке убывания: ", sortArrayDescending(createArray(10)));
         console.log("Первые 5 элементов массива: ", getFirstElementsSubarray(createArray(10), 5));
         console.log("Последние 5 элементов массива: ", getLastElementsSubarray(createArray(10), 5));
         console.log("Сумма чётных чисел массива", getEvenNumbersSum(createArray(10)));
         console.log("Квадраты чётных чисел массива: ", getEvenNumbersSquares(createArray(100)));
-    };
+    }
 
     return {
         main
