@@ -40,9 +40,9 @@ const Country = function () {
     ];
 
     function getCountriesWithMaxCitiesCount(countries) {
-        const maxCitiesCount = countries.reduce((max, country) => {
-            return Math.max(max, country.cities.length);
-        }, 0);
+        const maxCitiesCount = countries.reduce((max, country) =>
+                Math.max(max, country.cities.length),
+            0);
 
         return countries.filter(country => country.cities.length === maxCitiesCount);
     }
@@ -52,8 +52,8 @@ const Country = function () {
 
         countries.forEach(country => {
             populationsByCountries[country.name] =
-                country.cities.reduce((totalPopulationByCountry, city) =>
-                    totalPopulationByCountry + city.population, 0);
+                country.cities.reduce((totalPopulation, city) =>
+                    totalPopulation + city.population, 0);
         });
 
         return populationsByCountries;
