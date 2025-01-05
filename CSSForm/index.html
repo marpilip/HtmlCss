@@ -8,31 +8,40 @@
 </head>
 <body>
 <h1 class="title">Отправить заявку</h1>
+<div class="form">
+    <div class="input_field">
+        <label>
+            <span class="field_name">Ваше имя</span>
+            <input type="text" name="first_name" placeholder="Ваше имя *">
+        </label>
+    </div>
 
-<label class="input_field">
-    Ваше имя
-    <input type="text" name="first_name" placeholder="Ваше имя *">
-</label>
+    <div class="input_field">
+        <label>
+            <span class="field_name">Ваш номер телефона</span>
+            <input type="text" name="phone_number" placeholder="Ваш номер телефона *">
+        </label>
+    </div>
 
-<label class="input_field">
-    Ваш номер телефона
-    <input type="text" name="phone_number" placeholder="Ваш номер телефона *">
-</label>
+    <div class="input_field">
+        <label>
+            <span class="field_name">Ваш email или VK</span>
+            <input type="text" name="email_or_vk" placeholder="Ваш email или VK *">
+        </label>
+    </div>
 
-<label class="input_field">
-    Ваш email или VK
-    <input type="text" name="email_or_vk" placeholder="Ваш email или VK *">
-</label>
+    <div class="input_field">
+        <label>
+            <span class="field_name">Комментарий</span>
+            <textarea name="comment" rows="4" cols="50" placeholder="Комментарий (не обязательно)"></textarea>
+        </label>
+    </div>
 
-<label class="input_field">
-    Комментарий
-    <textarea name="comment" rows="4" cols="50" placeholder="Комментарий (не обязательно)"></textarea>
-</label>
+    <p class="paragraph">
+        Заполните и отправьте форму, и мы перезвоним Вам по указанному номеру.
+    </p>
 
-<p class="paragraph-style">
-    Заполните и отправьте форму, и мы перезвоним Вам по указанному номеру.
-</p>
-
-<button class="submit-button" type="submit">Отправить заявку</button>
+    <button class="submit_button" type="submit">Отправить заявку</button>
+</div>
 </body>
 </html>

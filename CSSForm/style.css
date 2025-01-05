@@ -1,68 +1,77 @@
-body {
-    background-color: #feeed5;
-    font-family: "Arial Nova Regular", sans-serif;
+* {
     box-sizing: border-box;
 }
 
+body {
+    background-color: #feeed5;
+    font-family: "Arial Nova Regular", sans-serif;
+    font-size: 14px;
+    max-width: 740px;
+    text-align: left;
+    color: #6c655d;
+}
+
+.form {
+    padding: 10px 20px 13px;
+}
+
 .title {
-    color: #786d5b;
     padding: 20px 20px 5px;
-    font-size: 40px;
+    font-size: 30px;
     background-color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .input_field {
-    color: #6c655d;
-    margin-left: 20px;
-    font-size: 20px;
     font-weight: 550;
+    width: 100%;
+    color: #6c655d;
 }
 
 .input_field textarea,
-.input_field input {
-    margin-top: 5px;
-    margin-left: 25px;
-    margin-bottom: 30px;
-    padding: 10px;
+.input_field input[type="text"] {
+    padding: 10px 12px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    width: 100%;
     display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 18px;
     background-color: #fff;
-    width: 97%;
 }
+
 
 .input_field textarea {
     resize: vertical;
     font-family: "Arial Nova Regular", sans-serif;
-    height: 150px;
+    height: 110px;
 }
 
-input::placeholder,
-textarea::placeholder{
-    color: #b1b1b3;
+.field-name {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin: 20px 0 8px;
 }
 
-.paragraph-style {
-    margin-left: 20px;
-    font-size: 20px;
+.paragraph {
+    margin-top: 20px;
     color: #847f7c;
 }
 
-.submit-button {
+.submit_button {
     background-color: #388db2;
     color: #fff;
     border: none;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 8px;
-    float: right;
-    margin-right: 30px;
     font-weight: 550;
-    margin-top: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 8px 12px;
+    float: right;
+    max-width: 150px;
+    width: 100%;
 }
 
-.submit-button:hover {
+.submit_button:hover {
     background-color: #2a6f89;
 }
