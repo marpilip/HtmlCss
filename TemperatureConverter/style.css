@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    background-color: floralwhite;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+    max-width: 750px;
+    color: navy;
+    padding: 10px;
+}
+
+.converter_header {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.convert_block {
+    float: right;
+    margin-right: 20px;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.convert_button {
+    background-color: navy;
+    color: floralwhite;
+    border: none;
+    font-weight: 550;
+    cursor: pointer;
+    margin-right: 80px;
+    padding: 5px 5px;
+    float: right;
+    max-width: 150px;
+}
+
+.convert_button:hover {
+    background-color: mediumblue;
+}
