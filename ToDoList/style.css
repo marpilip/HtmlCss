@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    background-color: ghostwhite;
+}
+
+.container {
+    font-family: Helvetica Neue, sans-serif;
+    color: navy;
+    max-width: 700px;
+    padding: 20px;
+    margin: auto;
+}
+
+.todo_header {
+    font-weight: 550;
+    font-size: 30px;
+}
+
+.input_block [type="text"] {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.add_button {
+    font-family: Helvetica Neue, sans-serif;
+    color: ghostwhite;
+    font-size: 22px;
+    background-color: navy;
+}
+
+.add_button:hover {
+    background-color: mediumblue;
+}
+
+.edit_input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit_task, .delete_task, .save_task, .cancel_task {
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 550;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit_task {
+    background-color: lightyellow;
+    color: navy;
+}
+
+.delete_task {
+    background-color: crimson;
+    color: cornsilk;
+}
+
+.save_task {
+    background-color: green;
+    color: cornsilk;
+}
+
+.cancel_task {
+    background-color: lightyellow;
+    color: navy;
+}
