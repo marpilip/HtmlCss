@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.animal_head {
+    margin: 20px;
+    color: navy;
+}
+
+.buttons {
+    margin: 10px;
+    padding: 15px;
+}
+
+.dog_button {
+    background-color: rosybrown;
+}
+
+.cat_button {
+    background-color: darkgrey;
+}
+
+.cat_button:hover, .dog_button:hover {
+    background-color: #2a6f89;
+}
