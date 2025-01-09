@@ -4,26 +4,29 @@
 
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 500px;
 }
 
 .animal_head {
-    margin: 20px;
-    color: navy;
+    margin-right: 10px;
+    padding: 10px;
+    color: #3454ff ;
+    font-size: 35px;
 }
 
 .buttons {
-    margin: 10px;
-    padding: 15px;
+    margin-right: 10px;
+    padding: 10px;
 }
 
 .dog_button {
-    background-color: rosybrown;
+    background-color: #378eb2;
+    font-size: 30px;
+    margin-right: 40px;
 }
 
 .cat_button {
-    background-color: darkgrey;
+    background-color: #feeed5;
+    font-size: 30px;
 }
 
 .cat_button:hover, .dog_button:hover {

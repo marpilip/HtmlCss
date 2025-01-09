@@ -1,42 +1,48 @@
 "use strict";
 
-function Animal(name) {
-    this.name = name;
-}
+(function () {
+    class Animal {
+        constructor(name) {
+            this.name = name;
+        }
 
-Animal.prototype.speak = function () {
-    console.log(this.name + " издает звук");
-};
+        speak() {
+            console.log(this.name + " издает звук");
+        }
+    }
 
-function Dog(name) {
-    Animal.call(this, name);
-}
+    class Dog extends Animal {
+        speak() {
+            console.log(this.name + " лает");
+        }
+    }
 
-Dog.prototype = Object.create(Animal.prototype);
-Dog.prototype.constructor = Dog;
+    class Cat extends Animal {
+        speak() {
+            console.log(this.name + " мяукает");
+        }
+    }
 
-Dog.prototype.speak = function () {
-    console.log(this.name + " лает");
-};
+    const dog = new Dog("Бобик");
+    const cat = new Cat("Мурка");
+    const animal = new Animal("Животное");
 
-function Cat(name){
-    Animal.call(this, name);
-}
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("dog_button").addEventListener("click", function () {
+            dog.speak();
+        });
+    });
 
-Cat.prototype = Object.create(Animal.prototype);
-Cat.prototype.constructor = Cat;
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("cat_button").addEventListener("click", function () {
+            cat.speak();
+        });
+    });
 
-Cat.prototype.speak = function () {
-    console.log(this.name + " мяукает");
-};
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("cat_button").addEventListener("click", function () {
+            animal.speak();
+        });
+    });
 
-const dog = new Dog("Бобик");
-const cat = new Cat("Мурка");
-
-document.getElementById("dog_button").addEventListener("click", function() {
-    dog.speak();
-});
-
-document.getElementById("cat_button").addEventListener("click", function() {
-    cat.speak();
-});
+})();
