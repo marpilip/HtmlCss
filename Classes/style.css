@@ -7,9 +7,10 @@ body {
 }
 
 .animal_head {
-    margin-right: 10px;
-    padding: 10px;
-    color: #3454ff ;
+    margin-right: 30px;
+    margin-left: 40px;
+    padding: 15px;
+    color: #3454ff;
     font-size: 35px;
 }
 
@@ -27,8 +28,14 @@ body {
 .cat_button {
     background-color: #feeed5;
     font-size: 30px;
+    margin-right: 40px;
 }
 
-.cat_button:hover, .dog_button:hover {
+.animal_button {
+    background-color: #847f7c;
+    font-size: 30px;
+}
+
+.cat_button:hover, .dog_button:hover, .animal_button:hover {
     background-color: #2a6f89;
 }

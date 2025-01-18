@@ -1,6 +1,6 @@
 "use strict";
 
-(function () {
+document.addEventListener("DOMContentLoaded", function () {
     class Animal {
         constructor(name) {
             this.name = name;
@@ -27,22 +27,15 @@
     const cat = new Cat("Мурка");
     const animal = new Animal("Животное");
 
-    document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById("dog_button").addEventListener("click", function () {
-            dog.speak();
-        });
+    document.getElementById("dog_button").addEventListener("click", function () {
+        dog.speak();
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById("cat_button").addEventListener("click", function () {
-            cat.speak();
-        });
+    document.getElementById("cat_button").addEventListener("click", function () {
+        cat.speak();
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById("cat_button").addEventListener("click", function () {
-            animal.speak();
-        });
+    document.getElementById("animal_button").addEventListener("click", function () {
+        animal.speak();
     });
-
-})();
+});
