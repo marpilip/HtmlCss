@@ -5,13 +5,13 @@
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 <div class="container">
-    <h1 class="converter_header">Конвертер температур из Цельсия в Кельвины и Фаренгейты</h1>
-    <label for="celsius_input">
-        Введите температуру в Цельсиях:
-    </label>
+    <h1 class="converter_header">Конвертер температур из шкалы Цельсия в градусы Кельвина и градусы Фаренгейта</h1>
+
+    <label for="celsius_input">Введите температуру в Цельсиях:</label>
     <input type="text" id="celsius_input" value="0" placeholder="°C">
 
     <div class="convert_block">
@@ -19,16 +19,16 @@
     </div>
 
     <div class="results">
-        <label>
+        <div class="kelvin">
             Температура в Кельвинах: <span id="kelvin_result">0</span> K
-        </label><br>
-        <label>
+        </div>
+        <br>
+        <div class="fahrenheit">
             Температура в Фаренгейтах:
             <span id="fahrenheit_result">0</span> °F
-        </label>
+        </div>
     </div>
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>
